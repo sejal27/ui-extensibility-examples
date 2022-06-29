@@ -1,0 +1,16 @@
+{
+  "type": "crm-card",
+  "version": "2",
+  "data": {
+    "title": "Covid Information",
+    "fetch": {
+      "targetFunction": "covidCard",
+      "objectTypes": [
+        {
+          "name": "contacts",
+          "propertiesToSend": ["country", "state"]
+        }
+      ]
+    }
+  }
+}

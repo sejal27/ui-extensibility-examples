@@ -1,0 +1,53 @@
+{
+  "runtime": "nodejs12.x",
+  "version": "1.0",
+  "appFunctions": {
+    "crmCard": {
+      "file": "crm-card.js",
+      "secrets": []
+    },
+    "dogCard": {
+      "file": "dog-card.js"
+    },
+    "dogCardPremium": {
+      "file": "dog-card-interactive.js"
+    },
+    "grant": {
+      "file": "grant.js"
+    },
+    "revoke": {
+      "file": "revoke.js"
+    },
+    "workflow": {
+      "file": "workflow.js"
+    },
+    "weatherCardInboundLabs": {
+      "file": "weather.js",
+      "secrets": ["OPENWEATHER_API_KEY"]
+    },
+    "crmTable": {
+      "file": "crm-table.js"
+    },
+    "covidCard": {
+      "file": "covid-card.js"
+    },
+    "form": {
+      "file": "form.js"
+    },
+    "jumpropeCart": {
+      "file": "jumprope-cart.js"
+    },
+    "jumpropePurchase": {
+      "file": "jumprope-confirmation-purchase.js"
+    },
+    "contactsCrmTable": {
+      "file": "contacts-crm-table.js"
+    },
+    "dealsCrmTable": {
+      "file": "deals-crm-table.js"
+    },
+    "crmReport": {
+      "file": "crm-report.js"
+    }
+  }
+}

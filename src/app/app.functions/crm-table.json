@@ -1,0 +1,17 @@
+{
+    "type": "crm-card",
+    "version": "2",
+    "data": {
+      "title": "Inbound Labs CRM Table",
+      "fetch": {
+        "targetFunction": "crmTable",
+        "objectTypes": [
+          {
+            "name": "contacts",
+            "propertiesToSend": [],
+            "actions": []
+          }
+        ]
+      }
+    }
+}

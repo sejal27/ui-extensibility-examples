@@ -1,0 +1,16 @@
+{
+  "type": "crm-card",
+  "version": "2",
+  "data": {
+    "title": "Current weather InboundLabs Edition",
+    "fetch": {
+      "targetFunction": "weatherCardInboundLabs",
+      "objectTypes": [
+        {
+          "name": "contacts",
+          "propertiesToSend": ["country", "city", "state"]
+        }
+      ]
+    }
+  }
+}
