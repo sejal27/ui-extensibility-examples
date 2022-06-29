@@ -1,0 +1,17 @@
+{
+  "name": "CRM Reports - Inbound Labs",
+  "description": "",
+  "scopes": [    "crm.objects.contacts.read",
+    "crm.objects.contacts.write"],
+  "public": false,
+  "extensions": {
+    "crm": {
+      "cards": [
+        {
+          "file": "./crm-report.json",
+          "version": "2"
+        }
+      ]
+    }
+  }
+}

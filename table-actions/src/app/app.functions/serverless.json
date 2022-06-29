@@ -1,0 +1,12 @@
+{
+  "runtime": "nodejs12.x",
+  "version": "1.0",
+  "appFunctions": {
+    "tableActions": {
+      "file": "table-actions.js"
+    },
+    "future":{
+      "file": "future.js"
+    }
+  }
+}

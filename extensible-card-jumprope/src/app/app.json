@@ -1,0 +1,23 @@
+{
+  "name": "Jumprope Labs",
+  "description": "Cards that are built on the v2 extensible card system",
+  "scopes": [
+    "crm.objects.contacts.write",
+    "crm.lists.write",
+    "crm.lists.read",
+    "crm.schemas.contacts.read",
+    "crm.schemas.contacts.write",
+    "crm.objects.contacts.read"
+  ],
+  "public": false,
+  "extensions": {
+    "crm": {
+      "cards": [
+        {
+          "file": "./jumprope-card.json",
+          "version": "2"
+        }
+      ]
+    }
+  }
+}

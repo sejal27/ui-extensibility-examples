@@ -1,0 +1,12 @@
+{
+  "runtime": "nodejs12.x",
+  "version": "1.0",
+  "appFunctions": {
+    "contactsCrmTable": {
+      "file": "contacts-crm-table.js"
+    },
+    "dealsCrmTable":{
+      "file": "deals-crm-table.js"
+    }
+  }
+}
