@@ -1,6 +1,0 @@
-{
-  "name": "inbound-labs",
-  "scripts": {
-    "upload": "hs project upload"
-  }
-}
