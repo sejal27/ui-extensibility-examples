@@ -16,7 +16,7 @@
     "crm": {
       "cards": [
         {
-          "file": "./form.json",
+          "file": "./crm-report.json",
           "version": "2"
         }
       ]

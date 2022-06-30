@@ -2,8 +2,8 @@
   "runtime": "nodejs12.x",
   "version": "1.0",
   "appFunctions": {
-    "form": {
-      "file": "form.js"
+    "crmReport": {
+      "file": "crm-report.js"
     }
   }
 }
