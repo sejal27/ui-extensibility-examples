@@ -4,6 +4,12 @@
   "appFunctions": {
     "crmReport": {
       "file": "crm-report.js"
+    },
+    "contactsCrmTable": {
+      "file": "contacts-crm-table.js"
+    },
+    "dealsCrmTable":{
+      "file": "deals-crm-table.js"
     }
   }
 }
