@@ -18,6 +18,15 @@ exports.main = async (context = {}, sendResponse) => {
             "text": "An example of CRM table showing contacts record data."
         },
         {
+            "type": "alert",
+            "variant": "warning",
+            "title": "Contact Out of Office!",
+            "body": {
+              "type": "text",
+              "text": "Use Good Judgement while e-mailing this contact."
+            }
+          },
+        {
             type: 'crm::table',
             objectTypeId: '0-1',
             properties: ['email', 'hubspot_owner_id', 'firstname', 'lastname'],
