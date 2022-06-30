@@ -2,8 +2,8 @@
   "runtime": "nodejs12.x",
   "version": "1.0",
   "appFunctions": {
-    "dogCard": {
-      "file": "dog-card.js"
+    "form": {
+      "file": "form.js"
     }
   }
 }
