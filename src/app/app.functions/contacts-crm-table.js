@@ -15,15 +15,7 @@ exports.main = async (context = {}, sendResponse) => {
         {
             "type":"text",
             "format":"markdown",
-            "text": "An example of CRM table showing contacts record data"
-        },
-        {
-            "type": "button",
-            "text": "Contacts",
-            "onClick": {
-                "type": "SERVERLESS_ACTION_HOOK",
-                "serverlessFunction": "contactsCrmTable"
-              }
+            "text": "An example of CRM table showing contacts record data."
         },
         {
             type: 'crm::table',
