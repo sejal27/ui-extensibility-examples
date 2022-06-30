@@ -15,7 +15,7 @@ exports.main = async (context = {}, sendResponse) => {
         {
             "type":"text",
             "format":"markdown",
-            "text": "A table using UI Extensbility 'sections'"
+            "text": "An example of CRM table showing contacts record data"
         },
         {
             "type": "button",
@@ -23,14 +23,6 @@ exports.main = async (context = {}, sendResponse) => {
             "onClick": {
                 "type": "SERVERLESS_ACTION_HOOK",
                 "serverlessFunction": "contactsCrmTable"
-              }
-        },
-        {
-            "type": "button",
-            "text": "Deals",
-            "onClick": {
-                "type": "SERVERLESS_ACTION_HOOK",
-                "serverlessFunction": "dealsCrmTable"
               }
         },
         {

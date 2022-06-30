@@ -2,7 +2,7 @@
   "type": "crm-card",
   "version": "2",
   "data": {
-    "title": "Inbound Labs CRM Table V2",
+    "title": "CRM Table Example",
     "fetch": {
       "targetFunction": "contactsCrmTable",
       "objectTypes": [
