@@ -16,42 +16,7 @@
     "crm": {
       "cards": [
         {
-          "file": "./crm-card.json"
-        },
-        {
           "file": "./dog-card.json",
-          "version": "2"
-        },
-        {
-          "file": "./dog-card-interactive.json",
-          "version": "2"
-        },
-        {
-          "file": "./weather-card.json",
-          "version": "2"
-        },
-        {
-          "file": "./crm-table.json",
-          "version": "2"
-        },
-        {
-          "file": "./covid-card.json",
-          "version": "2"
-        },
-        {
-          "file": "./form.json",
-          "version": "2"
-        },
-        {
-          "file": "./jumprope-card.json",
-          "version": "2"
-        },
-        {
-          "file": "./crm-table-switcher.json",
-          "version": "2"
-        },
-        {
-          "file": "./crm-report.json",
           "version": "2"
         }
       ]
