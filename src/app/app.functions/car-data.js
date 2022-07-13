@@ -10,6 +10,7 @@ const axios = require('axios');
  * https://git.hubteam.com/HubSpot/ui-extensibility#shape-of-the-json-payload
  */
 exports.main = async (context = {}, sendResponse) => {
+    const { make, vin } = context.propertiesToSend;
     // vin = context.vin;
     // const {
     //     data: { vinData }
@@ -22,7 +23,7 @@ exports.main = async (context = {}, sendResponse) => {
             "body": {
               "type": "text",
               "format": "markdown"
-              "text": "dummy"
+              "text": vin
             }
         },
         {
