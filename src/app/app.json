@@ -28,6 +28,10 @@
         {
           "file": "./simple-card.json",
           "version":"2"
+        },
+        {
+          "file": "./crm-table.json",
+          "version":"2"
         }
       ]
     }
