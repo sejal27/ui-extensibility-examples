@@ -7,9 +7,6 @@
     },
     "simple-card":{
       "file": "simple-card.js"
-    },
-    "crm-table":{
-      "file": "crm-table.js"
     }
   }
 }
