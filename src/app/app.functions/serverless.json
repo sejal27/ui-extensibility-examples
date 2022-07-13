@@ -2,9 +2,6 @@
   "runtime": "nodejs12.x",
   "version": "1.0",
   "appFunctions": {
-    "crmReport": {
-      "file": "crm-report.js"
-    },
     "contactsCrmTable": {
       "file": "contacts-crm-table.js"
     },

@@ -18,10 +18,6 @@
     "crm": {
       "cards": [
         {
-          "file": "./crm-report.json",
-          "version": "2"
-        },
-        {
           "file": "./crm-table-switcher.json",
           "version": "2"
         },
