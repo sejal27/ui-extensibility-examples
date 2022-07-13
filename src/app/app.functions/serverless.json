@@ -2,9 +2,6 @@
   "runtime": "nodejs12.x",
   "version": "1.0",
   "appFunctions": {
-    "contactsCrmTable": {
-      "file": "contacts-crm-table.js"
-    },
     "dogCardPremium":{
       "file": "dog-card-interactive.js"
     },
