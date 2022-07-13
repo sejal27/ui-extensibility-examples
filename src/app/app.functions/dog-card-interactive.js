@@ -14,24 +14,15 @@ exports.main = async (context = {}, sendResponse) => {
         data: { message }
     } = await axios.get("https://dog.ceo/api/breeds/image/random");
 
-    const {
-        data: { fact }
-    } = await axios.get("https://catfact.ninja/fact");
+    // const {
+    //     data: { fact }
+    // } = await axios.get("https://catfact.ninja/fact");
 
     const sections = [
         {
             "type": "image",
             "src": message,
             "alt": "A dog, enjoy 🎉!"
-        },
-        {
-            "type":"text",
-            "format":"markdown",
-            "text": "**Like cats more? Here's some interesting cat fact for today!**"
-        },
-        {
-            "type": "text",
-            "text": fact
         },
         {
             "type": "buttonRow",
