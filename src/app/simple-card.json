@@ -8,7 +8,9 @@
         "objectTypes": [
           {
             "name": "contacts",
-            "propertiesToSend": [],
+            "propertiesToSend": [
+              "firstname"
+            ],
             "actions": []
           }
         ]
