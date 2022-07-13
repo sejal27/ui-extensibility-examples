@@ -19,6 +19,13 @@
                 "associatedObjectProperties": []
               }
             ]
+          },
+          {
+            "name": "p_car",
+            "propertiesToSend": [
+                "make"
+              ],
+            "actions": []
           }
         ]
       }
