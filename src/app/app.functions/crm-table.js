@@ -11,7 +11,7 @@ exports.main = async (context = {}, sendResponse) => {
         {
             type: 'crm::table',
             objectTypeId: '0-1',
-            properties: ['email', 'hubspot_owner_id', 'firstname', 'lastname'],
+            properties: ['email', 'firstname', 'lastname'],
             pageSize: 3
         }
     ];
