@@ -17,11 +17,15 @@ exports.main = async (context = {}, sendResponse) => {
     } = await axios.get(apiUrl);
 
     const sections = [
-        {
-            "type": "text",
-            "format": "markdown",
-            "text": "VIN Information for " + vin + " obtained using [NHTSA API](https://vpic.nhtsa.dot.gov/api/)"
-          },
+      {
+        "type": "alert",
+        "title": "Note",
+        "body": {
+          "type": "text",
+          "format": "markdown",
+          "text": "VIN Information for " + vin + " obtained using [NHTSA API](https://vpic.nhtsa.dot.gov/api/)"
+        }
+    },
           {
             "type": "tag",
             "text": make,
@@ -47,8 +51,7 @@ exports.main = async (context = {}, sendResponse) => {
                 }
               }
             ]
-        },
-        
+        },    
     ];
     sendResponse({
         sections

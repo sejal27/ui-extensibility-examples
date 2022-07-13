@@ -20,11 +20,6 @@ exports.main = async (context = {}, sendResponse) => {
 
     const sections = [
         {
-            "type":"text",
-            "format":"markdown",
-            "text": "Pic of the day 🎉!"
-        },
-        {
             "type": "image",
             "src": message,
             "alt": "A dog, enjoy 🎉!"
