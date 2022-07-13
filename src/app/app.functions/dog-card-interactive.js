@@ -52,12 +52,12 @@ exports.main = async (context = {}, sendResponse) => {
               },
               {
                 "type": "button",
-                "text": "Read Docs",
+                "text": "View in Modal",
                 "onClick": {
                     "type": "IFRAME",
                     "width": 890,
                     "height": 748,
-                    "uri": "https://developer.hubspot.com",
+                    "uri": message,
                 }
               }
             ]
