@@ -22,7 +22,7 @@ exports.main = async (context = {}, sendResponse) => {
             "body": {
               "type": "text",
               "format": "markdown"
-              "text": vin
+              "text": vin,
             }
         },
         {
