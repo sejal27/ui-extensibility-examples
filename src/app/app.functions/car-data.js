@@ -18,19 +18,15 @@ exports.main = async (context = {}, sendResponse) => {
 
     const sections = [
         {
-            "type": "alert",
-            "title": "Note",
-            "body": {
-              "type": "text",
-              "format": "markdown",
-              "text": "VIN Information for " + vin + " obtained using [NHTSA API](https://vpic.nhtsa.dot.gov/api/)"
-            }
-        },
-        {
-            "type":"text",
-            "format":"markdown",
-            "text": "If you think this contact might be **more interested** in cats, you should share the below fact with them!"
-        },
+            "type": "text",
+            "format": "markdown",
+            "text": "VIN Information for " + vin + " obtained using [NHTSA API](https://vpic.nhtsa.dot.gov/api/)"
+          },
+          {
+            "type": "tag",
+            "text": make,
+            "variant": "success"
+          }
         {
             "type":"text",
             "format":"markdown",

@@ -22,7 +22,7 @@ exports.main = async (context = {}, sendResponse) => {
         {
             "type":"text",
             "format":"markdown",
-            "text": "**Premium version**"
+            "text": "Pic of the day 🎉!"
         },
         {
             "type": "image",
@@ -32,7 +32,7 @@ exports.main = async (context = {}, sendResponse) => {
         {
             "type":"text",
             "format":"markdown",
-            "text": "If you think this contact might be **more interested** in cats, you should share the below fact with them!"
+            "text": "**Like cats more? Here's some interesting cat fact for today!**"
         },
         {
             "type": "text",
@@ -43,7 +43,7 @@ exports.main = async (context = {}, sendResponse) => {
             "buttons": [
               {
                 "type": "button",
-                "variant": "secondary",
+                "variant": "primary",
                 "text": "Generate new picture & fact",
                 "onClick": {
                     "type": "SERVERLESS_ACTION_HOOK",
@@ -55,8 +55,8 @@ exports.main = async (context = {}, sendResponse) => {
                 "text": "View in Modal",
                 "onClick": {
                     "type": "IFRAME",
-                    "width": 500,
-                    "height": 500,
+                    "width": 600,
+                    "height": 600,
                     "uri": message,
                 }
               }

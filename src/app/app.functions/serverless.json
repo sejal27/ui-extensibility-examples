@@ -10,6 +10,9 @@
     },
     "car-data":{
       "file": "car-data.js"
+    },
+    "simple-card":{
+      "file": "simple-card.js"
     }
   }
 }

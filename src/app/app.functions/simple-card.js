@@ -10,17 +10,21 @@ const axios = require('axios');
  * https://git.hubteam.com/HubSpot/ui-extensibility#shape-of-the-json-payload
  */
 exports.main = async (context = {}, sendResponse) => {
+    const { make, vin } = context.propertiesToSend;
+    const {
+        data: { vinData }
+    } = await axios.get(apiUrl);
 
     const sections = [
-
         {
-            type: 'crm::table',
-            objectTypeId: '0-1',
-            properties: ['email', 'hubspot_owner_id', 'firstname', 'lastname'],
-            pageSize: 3
-        }
+            "type":"text",
+            "format":"markdown",
+            "text": firstname + " " + lastname + " loves Tesla. He is planning to gift one to all of his family on his birthday, so look out for more deals"
+        },
+            ]
+        },
+        
     ];
-
     sendResponse({
         sections
     });
