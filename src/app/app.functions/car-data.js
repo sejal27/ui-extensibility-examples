@@ -13,22 +13,27 @@ exports.main = async (context = {}, sendResponse) => {
         "format": "markdown",
         "text": "VIN Information for " + vin + " obtained using [NHTSA API](https://vpic.nhtsa.dot.gov/api/)"
       },
-        {
-            "type": "buttonRow",
-            "buttons": [
-              {
-                "type": "button",
-                "variant": "primary",
-                "text": "View raw JSON",
-                "onClick": {
-                    "type": "IFRAME",
-                    "width": 800,
-                    "height": 600,
-                    "uri": apiUrl,
-                }
+      {
+        "type": "tag",
+        "text": make,
+        "variant": "success"
+      },
+      {
+          "type": "buttonRow",
+          "buttons": [
+            {
+              "type": "button",
+              "variant": "primary",
+              "text": "View raw JSON",
+              "onClick": {
+                  "type": "IFRAME",
+                  "width": 800,
+                  "height": 600,
+                  "uri": apiUrl,
               }
-            ]
-        },    
+            }
+          ]
+      },    
     ];
     sendResponse({
         sections
