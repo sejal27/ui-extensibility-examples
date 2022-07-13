@@ -30,8 +30,7 @@ exports.main = async (context = {}, sendResponse) => {
             "type":"text",
             "format":"markdown",
             "text": "If you think this contact might be **more interested** in cats, you should share the below fact with them!"
-        },
-        
+        }        
     ];
     sendResponse({
         sections
