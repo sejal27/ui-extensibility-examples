@@ -10,24 +10,20 @@ const axios = require('axios');
  * https://git.hubteam.com/HubSpot/ui-extensibility#shape-of-the-json-payload
  */
 exports.main = async (context = {}, sendResponse) => {
+    vin = context.vin;
     const {
-        data: { message }
-    } = await axios.get("https://dog.ceo/api/breeds/image/random");
-
-    const {
-        data: { fact }
-    } = await axios.get("https://catfact.ninja/fact");
+        data: { vinData }
+    } = await axios.get("https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinExtended/" + vin + "?format=json");
 
     const sections = [
         {
-            "type":"text",
-            "format":"markdown",
-            "text": "**Premium version**"
-        },
-        {
-            "type": "image",
-            "src": message,
-            "alt": "A dog, enjoy 🎉!"
+            "type": "alert",
+            "title": "Note",
+            "body": {
+              "type": "text",
+              "format": "markdown"
+              "text": "VIN Information for " + vin + " obtained using [NHTSA API](https://vpic.nhtsa.dot.gov/api/)"
+            }
         },
         {
             "type":"text",
@@ -35,29 +31,17 @@ exports.main = async (context = {}, sendResponse) => {
             "text": "If you think this contact might be **more interested** in cats, you should share the below fact with them!"
         },
         {
-            "type": "text",
-            "text": fact
-        },
-        {
             "type": "buttonRow",
             "buttons": [
               {
                 "type": "button",
-                "variant": "secondary",
-                "text": "Generate new picture & fact",
-                "onClick": {
-                    "type": "SERVERLESS_ACTION_HOOK",
-                    "serverlessFunction": "dogCardPremium"
-                  }
-              },
-              {
-                "type": "button",
-                "text": "View in Modal",
+                "variant": "primary",
+                "text": "View raw JSON",
                 "onClick": {
                     "type": "IFRAME",
-                    "width": 500,
-                    "height": 500,
-                    "uri": message,
+                    "width": 800,
+                    "height": 600,
+                    "uri": vinData,
                 }
               }
             ]

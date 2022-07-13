@@ -7,6 +7,9 @@
     },
     "dogCardPremium":{
       "file": "dog-card-interactive.js"
+    },
+    "car-data":{
+      "file": "car-data.js"
     }
   }
 }
