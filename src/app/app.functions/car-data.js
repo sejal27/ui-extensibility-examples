@@ -11,9 +11,9 @@ const axios = require('axios');
  */
 exports.main = async (context = {}, sendResponse) => {
     vin = context.vin;
-    const {
-        data: { vinData }
-    } = await axios.get("https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinExtended/" + vin + "?format=json");
+    // const {
+    //     data: { vinData }
+    // } = await axios.get("https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinExtended/" + vin + "?format=json");
 
     const sections = [
         {
@@ -22,7 +22,7 @@ exports.main = async (context = {}, sendResponse) => {
             "body": {
               "type": "text",
               "format": "markdown"
-              "text": "VIN Information for " + vin + " obtained using [NHTSA API](https://vpic.nhtsa.dot.gov/api/)"
+              "text": vin
             }
         },
         {
@@ -30,24 +30,8 @@ exports.main = async (context = {}, sendResponse) => {
             "format":"markdown",
             "text": "If you think this contact might be **more interested** in cats, you should share the below fact with them!"
         },
-        {
-            "type": "buttonRow",
-            "buttons": [
-              {
-                "type": "button",
-                "variant": "primary",
-                "text": "View raw JSON",
-                "onClick": {
-                    "type": "IFRAME",
-                    "width": 800,
-                    "height": 600,
-                    "uri": vinData,
-                }
-              }
-            ]
-        },
+        
     ];
-
     sendResponse({
         sections
     });
