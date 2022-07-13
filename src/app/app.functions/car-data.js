@@ -10,7 +10,7 @@ const axios = require('axios');
  * https://git.hubteam.com/HubSpot/ui-extensibility#shape-of-the-json-payload
  */
 exports.main = async (context = {}, sendResponse) => {
-    vin = context.vin;
+    // vin = context.vin;
     // const {
     //     data: { vinData }
     // } = await axios.get("https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinExtended/" + vin + "?format=json");
@@ -22,7 +22,7 @@ exports.main = async (context = {}, sendResponse) => {
             "body": {
               "type": "text",
               "format": "markdown"
-              "text": vin
+              "text": "dummy"
             }
         },
         {
