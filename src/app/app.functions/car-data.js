@@ -31,21 +31,11 @@ exports.main = async (context = {}, sendResponse) => {
             "text": "If you think this contact might be **more interested** in cats, you should share the below fact with them!"
         },
         {
-            "type": "buttonRow",
-            "buttons": [
-              {
-                "type": "button",
-                "variant": "primary",
-                "text": "View raw JSON",
-                "onClick": {
-                    "type": "IFRAME",
-                    "width": 800,
-                    "height": 600,
-                    "uri": vinData,
-                }
-              }
-            ]
+            "type":"text",
+            "format":"markdown",
+            "text": vinData
         },
+        
     ];
     sendResponse({
         sections
