@@ -26,7 +26,7 @@ exports.main = async (context = {}, sendResponse) => {
             "type": "tag",
             "text": make,
             "variant": "success"
-          }
+          },
         {
             "type":"text",
             "format":"markdown",
