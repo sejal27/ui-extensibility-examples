@@ -5,7 +5,6 @@
       "title": "Example CRM Table",
       "fetch": {
         "targetFunction": "crm-table",
-        "timeoutMs": "30000",
         "objectTypes": [
           {
             "name": "contacts",

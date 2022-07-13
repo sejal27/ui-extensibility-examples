@@ -5,7 +5,6 @@
       "title": "Contact Highlights Card",
       "fetch": {
         "targetFunction": "simple-card",
-        "timeoutMs": "30000",
         "objectTypes": [
           {
             "name": "contacts",

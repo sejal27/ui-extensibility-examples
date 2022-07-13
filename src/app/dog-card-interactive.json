@@ -5,7 +5,6 @@
       "title": "Random Dog photo generator Card",
       "fetch": {
         "targetFunction": "dogCardPremium",
-        "timeoutMs": "30000",
         "objectTypes": [
           {
             "name": "contacts",
