@@ -2,13 +2,16 @@
     "type": "crm-card",
     "version": "2",
     "data": {
-      "title": "Simple Highlights Card",
+      "title": "Highlights Card",
       "fetch": {
         "targetFunction": "simple-card",
         "objectTypes": [
           {
             "name": "contacts",
-            "propertiesToSend": [],
+            "propertiesToSend": [
+              "firstname",
+              "lastname"
+            ],
             "actions": []
           }
         ]

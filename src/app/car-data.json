@@ -2,7 +2,7 @@
     "type": "crm-card",
     "version": "2",
     "data": {
-      "title": "Car VIN Decoder",
+      "title": "VIN Decoder",
       "fetch": {
         "targetFunction": "car-data",
         "objectTypes": [
