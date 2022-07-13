@@ -2,9 +2,9 @@
     "type": "crm-card",
     "version": "2",
     "data": {
-      "title": "Inbound Labs Car VIN Decoder",
+      "title": "Highlights",
       "fetch": {
-        "targetFunction": "car-data",
+        "targetFunction": "simple-card",
         "objectTypes": [
           {
             "name": "p_car",

@@ -18,16 +18,16 @@
     "crm": {
       "cards": [
         {
-          "file": "./crm-table-switcher.json",
-          "version": "2"
-        },
-        {
           "file": "./dog-card-interactive.json",
           "version":"2"
         },
         {
           "file": "./car-data.json",
           "version":"2"
+        },
+        {
+          "file": "./simple-card.json",
+          "version": "2"
         }
       ]
     }
