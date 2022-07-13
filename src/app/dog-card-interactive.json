@@ -2,7 +2,7 @@
     "type": "crm-card",
     "version": "2",
     "data": {
-      "title": "Dog pic of the day!",
+      "title": "Random Dog photo generator Card",
       "fetch": {
         "targetFunction": "dogCardPremium",
         "objectTypes": [

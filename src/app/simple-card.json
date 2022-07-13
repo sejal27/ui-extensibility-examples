@@ -2,7 +2,7 @@
     "type": "crm-card",
     "version": "2",
     "data": {
-      "title": "Contact Highlights",
+      "title": "Contact Highlights Card",
       "fetch": {
         "targetFunction": "simple-card",
         "objectTypes": [
