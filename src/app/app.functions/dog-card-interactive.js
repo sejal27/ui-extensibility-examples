@@ -39,27 +39,29 @@ exports.main = async (context = {}, sendResponse) => {
             "text": fact
         },
         {
-            "type": "button",
-            "text": "Generate new picture & fact",
-            "variant": "primary",
-            "onClick": {
-              "type": "SERVERLESS_ACTION_HOOK",
-              "serverlessFunction": "dogCardPremium"
-            }
-
+            "type": "buttonRow",
+            "buttons": [
+              {
+                "type": "button",
+                "variant": "secondary",
+                "text": "Generate new picture & fact",
+                "onClick": {
+                    "type": "SERVERLESS_ACTION_HOOK",
+                    "serverlessFunction": "dogCardPremium"
+                  }
+              },
+              {
+                "type": "button",
+                "text": "Read Docs",
+                "onClick": {
+                    "type": "IFRAME",
+                    "width": 890,
+                    "height": 748,
+                    "uri": "https://developer.hubspot.com",
+                }
+              }
+            ]
         },
-        {
-            "type": "button",
-            "text": "Read Docs",
-            "variant": "secondary",
-            "onClick": {
-                "type": "IFRAME",
-                "width": 890,
-                "height": 748,
-                "uri": "https://example.com/iframe-contents",
-            }
-        }
-
     ];
 
     sendResponse({
