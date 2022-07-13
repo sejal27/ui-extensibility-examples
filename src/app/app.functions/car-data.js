@@ -21,8 +21,8 @@ exports.main = async (context = {}, sendResponse) => {
             "title": "Note",
             "body": {
               "type": "text",
-              "format": "markdown"
-              "text": vin,
+              "format": "markdown",
+              "text": vin
             }
         },
         {
