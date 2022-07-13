@@ -1,5 +1,4 @@
-const axios = require('axios');
-
+const axios = require("axios");
 
 /**
  * Main "fetch function": see "webhooks" tab in the official docs:
@@ -10,19 +9,16 @@ const axios = require('axios');
  * https://git.hubteam.com/HubSpot/ui-extensibility#shape-of-the-json-payload
  */
 exports.main = async (context = {}, sendResponse) => {
-    // const { firstname, lastname } = context.propertiesToSend;
+  // const { firstname, lastname } = context.propertiesToSend;
+  const sections = [
+    {
+      type: "text",
+      format: "markdown",
+      text: "Contact loves Tesla. He is planning to gift one to all of his family on his birthday, so look out for more deals",
+    },
+  ];
 
-    const sections = [
-        {
-            "type":"text",
-            "format":"markdown",
-            "text": "Contact loves Tesla. He is planning to gift one to all of his family on his birthday, so look out for more deals"
-        },
-            ]
-        },
-        
-    ];
-    sendResponse({
-        sections
-    });
+  sendResponse({
+    sections,
+  });
 };
