@@ -11,7 +11,6 @@ const axios = require('axios');
  */
 exports.main = async (context = {}, sendResponse) => {
     const { make, vin } = context.propertiesToSend;
-    // vin = context.vin;
     // const {
     //     data: { vinData }
     // } = await axios.get("https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinExtended/" + vin + "?format=json");

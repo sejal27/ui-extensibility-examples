@@ -1,0 +1,76 @@
+{
+    "name": "car",
+    "metaType": "PORTAL_SPECIFIC",
+    "labels": {
+      "singular": "Car",
+      "plural": "Cars"
+    },
+    "requiredProperties": ["make", "model"],
+    "searchableProperties": ["make", "model", "vin"],
+    "primaryDisplayProperty": "make",
+    "secondaryDisplayProperties": ["model"],
+    "propertyGroups": [
+      {
+        "name": "car_information",
+        "displayName": "Car Information",
+        "displayOrder": 0
+      }
+    ],
+    "properties": [
+      {
+        "name": "model",
+        "label": "Model",
+        "groupName": "car_information",
+        "description": "Model of the car",
+        "options": [],
+        "displayOrder": -1,
+        "hasUniqueValue": false,
+        "hidden": false,
+        "type": "string",
+        "fieldType": "text"
+      },
+      {
+        "name": "description",
+        "label": "Description",
+        "groupName": "car_information",
+        "description": "Short description of the car",
+        "options": [],
+        "displayOrder": -1,
+        "hasUniqueValue": false,
+        "hidden": false,
+        "type": "string",
+        "fieldType": "textarea"
+      },
+      {
+        "name": "make",
+        "label": "Make",
+        "groupName": "car_information",
+        "description": "Make for the car",
+        "options": [],
+        "displayOrder": -1,
+        "hasUniqueValue": false,
+        "hidden": false,
+        "type": "string",
+        "fieldType": "text"
+      },
+      {
+        "name": "vin",
+        "label": "VIN",
+        "groupName": "car_information",
+        "type": "string",
+        "fieldType": "text",
+        "description": "VIN number for the car"
+      },
+      {
+        "name": "purchase_date",
+        "label": "Purchase Date",
+        "groupName": "car_information",
+        "type": "string",
+        "fieldType": "text",
+        "description": "Date when the car was purchased"
+      }
+    ],
+    "associatedObjects": ["CONTACT", "DEAL"],
+    "associations": []
+  }
+  
