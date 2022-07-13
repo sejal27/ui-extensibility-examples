@@ -2,7 +2,7 @@
     "type": "crm-card",
     "version": "2",
     "data": {
-      "title": "Doc Picture of the day!",
+      "title": "Dog Picture of the day!",
       "fetch": {
         "targetFunction": "dogCardPremium",
         "objectTypes": [
