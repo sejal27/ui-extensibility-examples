@@ -9,7 +9,7 @@
       "file": "contacts-crm-table.js"
     },
     "dogCardPremium":{
-      "file": "doc-card-interactive.js"
+      "file": "dog-card-interactive.js"
     }
   }
 }
