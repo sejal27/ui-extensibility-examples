@@ -4,8 +4,13 @@ exports.main = async (context = {}, sendResponse) => {
     const {firstname} = context.propertiesToSend;
     const sections = [
         {
-            "type": "text",
-            "text": "Brian loves Tesla."
+            "type": "alert",
+            "variant":"success",
+            "title": "Contact Highlights Card",
+            "body": {
+              "type": "text",
+              "text": firstname + " loves Tesla."
+            }
           } 
         
     ];
