@@ -55,7 +55,7 @@ exports.main = async (context = {}, sendResponse) => {
                     "type": "IFRAME",
                     "width": 800,
                     "height": 600,
-                    "uri": notes,
+                    "uri": apiURL.notes,
                 }
               }
             ]
