@@ -20,7 +20,7 @@ exports.main = async (context = {}, sendResponse) => {
     ];
   }
 
-  const apiURL = "https://api.covidtracking.com/v1/states/" + state + "/current.json";
+  const apiURL = "https://api.covidtracking.com/v1/states/" + state.toLowerCase() + "/current.json";
   try {
     const {
         data: { hospitalizedCurrently, death, deathIncrease, lastUpdateEt },
@@ -46,7 +46,7 @@ exports.main = async (context = {}, sendResponse) => {
               },
               {
                 "label": "Deaths",
-                "number": death,
+                "number": death.toString(),
                 "description": {
                   "type": "trend",
                   "value": deathIncrease.toString(),
