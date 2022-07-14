@@ -13,17 +13,6 @@ exports.main = async (context = {}, sendResponse) => {
             "type": "divider",
             "distance": "small"
         },
-        {
-            "type": "text",
-            "format": "markdown",
-            "text": "**All Contacts**"
-        },
-        {
-            type: 'crm::table',
-            objectTypeId: '0-1',
-            properties: ['firstname', 'lastname', 'email'],
-            pageSize: 3
-        }, 
     ];
 
     sendResponse({
