@@ -10,6 +10,9 @@
     },
     "crm-table":{
       "file": "crm-table.js"
+    },
+    "covid-card":{
+      "file": "covid-card.js"
     }
   }
 }

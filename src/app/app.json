@@ -28,6 +28,10 @@
         {
           "file": "./crm-table.json",
           "version":"2"
+        },
+        {
+          "file": "./covid-card.json",
+          "version":"2"
         }
       ]
     }

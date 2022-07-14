@@ -9,10 +9,6 @@ exports.main = async (context = {}, sendResponse) => {
             "format":"markdown",
             "text": "This contact loves Tesla!**"
         },
-        {
-            "type": "divider",
-            "distance": "small"
-        },
     ];
 
     sendResponse({
