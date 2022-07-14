@@ -43,7 +43,7 @@ exports.main = async (context = {}, sendResponse) => {
       sections = [
         {
             "type": "tag",
-            "text": ${state},
+            "text": `${state}`,
             "variant": "success"
         },
         {
