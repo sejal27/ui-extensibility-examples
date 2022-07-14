@@ -9,7 +9,7 @@ exports.main = async (context = {}, sendResponse) => {
       {
         type: "alert",
         title:
-          "Want to use search data directly from Google to inform your content strategy?",
+          "Important",
         variant: "warning",
         body: {
           type: "text",
@@ -63,7 +63,7 @@ exports.main = async (context = {}, sendResponse) => {
   }
   
 
-//   console.log(error, message, notes, covid19Site, country, state);
+  console.log(error, message, notes, covid19Site, country, state);
 
 
   sendResponse({
