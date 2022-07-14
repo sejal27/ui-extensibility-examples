@@ -29,7 +29,7 @@ exports.main = async (context = {}, sendResponse) => {
               }
             }
           ]
-      },  
+      },
     ];
     sendResponse({
         sections

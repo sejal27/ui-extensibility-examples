@@ -9,7 +9,7 @@ exports.main = async (context = {}, sendResponse) => {
             "variant": "success",
             "body": {
               "type": "text",
-              "text": firstname + " loves Tesla."
+              "text": "Brian loves Tesla."
             }
           } 
         
