@@ -51,7 +51,7 @@ exports.main = async (context = {}, sendResponse) => {
         {
             type: "tag",
             text: `${state}`,
-            variant: "success",
+            variant: "error",
           },
         {
           type: "alert",
