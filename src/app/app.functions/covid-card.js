@@ -4,7 +4,7 @@ exports.main = async (context = {}, sendResponse) => {
   const { state, country } = context;
 
   let sections = [];
-  if (country !== "us" || !state) {
+  if (country !== "US" || !state) {
     sections = [
       {
         type: "alert",
@@ -20,47 +20,51 @@ exports.main = async (context = {}, sendResponse) => {
     ];
   }
 
-  const {
-    data: { error, message, notes, covid19Site },
-  } = await axios.get(
-    `https://api.covidtracking.com/v1/states/${state}/info.json`
-  );
 
-  console.log(error, message, notes, covid19Site, country, state);
+  try {
+    const {
+        data: { error, message, notes, covid19Site },
+      } = await axios.get(
+        `https://api.covidtracking.com/v1/states/${state}/info.json`
+      );
 
-  if (error) {
-    sections = [
-      {
-        type: "alert",
-        title:
-          "Want to use search data directly from Google to inform your content strategy?",
-        variant: "danger",
-        body: {
+      sections = [
+        {
+          type: "tag",
+          text: `${state}`,
+          variant: "success",
+        },
+        {
           type: "text",
           format: "markdown",
-          text: `This card experienced an error, ${message}. You can learn more about this api at the [The Covid Tracking Project](https://covidtracking.com/)`,
+          text: `**State Notes:** ${notes}`,
         },
-      },
-    ];
-  } else {
+        {
+          type: "text",
+          format: "markdown",
+          text: `**State's Covid-19 Site:** [${covid19Site}](${covid19Site})`,
+        },
+      ];
+
+  } catch (error) {
     sections = [
-      {
-        type: "tag",
-        text: `${state}`,
-        variant: "success",
-      },
-      {
-        type: "text",
-        format: "markdown",
-        text: `**State Notes:** ${notes}`,
-      },
-      {
-        type: "text",
-        format: "markdown",
-        text: `**State's Covid-19 Site:** [${covid19Site}](${covid19Site})`,
-      },
+        {
+          type: "alert",
+          title:
+            "Problems with fetching covid data",
+          variant: "danger",
+          body: {
+            type: "text",
+            format: "markdown",
+            text: `This card experienced an error: ${error}. You can learn more about this api at the [The Covid Tracking Project](https://covidtracking.com/)`,
+          },
+        },
     ];
   }
+  
+
+//   console.log(error, message, notes, covid19Site, country, state);
+
 
   sendResponse({
     sections,
