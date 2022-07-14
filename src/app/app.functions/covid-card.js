@@ -65,7 +65,7 @@ exports.main = async (context = {}, sendResponse) => {
           },
         },
     ];
-    console.log(error, notes, covid19Site, country, state);
+    console.log(error, country, state);
   }
   
   sendResponse({
