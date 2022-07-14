@@ -37,11 +37,11 @@ exports.main = async (context = {}, sendResponse) => {
             "items": [
               {
                 "label": "Hospitalized Currently",
-                "number": hospitalizedCurrently,
+                "number": `$(hospitalizedCurrently)`,
                 "description": {
                   "type": "text",
                   "format": "markdown",
-                  "text": "# of people hospitalized as of " + lastUpdateEt
+                  "text": "# of people hospitalized as of `$(lastUpdateEt)`"
                 }
               },
               {
@@ -49,7 +49,7 @@ exports.main = async (context = {}, sendResponse) => {
                 "number": death,
                 "description": {
                   "type": "trend",
-                  "value": deathIncrease,
+                  "value": `$(deathIncrease)`,
                   "direction": "increase"
                 }
               }
