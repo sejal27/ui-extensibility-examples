@@ -60,12 +60,9 @@ exports.main = async (context = {}, sendResponse) => {
           },
         },
     ];
+    console.log(error, message, notes, covid19Site, country, state);
   }
   
-
-  console.log(error, message, notes, covid19Site, country, state);
-
-
   sendResponse({
     sections,
   });
