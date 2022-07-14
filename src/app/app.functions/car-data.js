@@ -1,4 +1,5 @@
 const axios = require('axios');
+const myPortalsObjectId = 701236872;
 
 exports.main = async (context = {}, sendResponse) => {
     const { make, vin } = context.propertiesToSend;
@@ -12,11 +13,6 @@ exports.main = async (context = {}, sendResponse) => {
         "type": "text",
         "format": "markdown",
         "text": "VIN Information for " + vin + " obtained using [NHTSA API](https://vpic.nhtsa.dot.gov/api/)"
-      },
-      {
-        "type": "tag",
-        "text": make,
-        "variant": "success"
       },
       {
           "type": "buttonRow",

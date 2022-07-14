@@ -7,7 +7,7 @@ exports.main = async (context = {}, sendResponse) => {
         {
             "type":"text",
             "format":"markdown",
-            "text": firstname + " Loves Tesla!**"
+            "text": "This contact loves Tesla!**"
         },
         {
             "type": "divider",
@@ -21,7 +21,7 @@ exports.main = async (context = {}, sendResponse) => {
         {
             type: 'crm::table',
             objectTypeId: '0-1',
-            properties: ['email', 'hubspot_owner_id', 'firstname', 'lastname'],
+            properties: ['firstname', 'lastname', 'email'],
             pageSize: 3
         }, 
     ];
