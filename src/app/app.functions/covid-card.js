@@ -44,6 +44,22 @@ exports.main = async (context = {}, sendResponse) => {
           format: "markdown",
           text: `**State's Covid-19 Site:** [${covid19Site}](${covid19Site})`,
         },
+        {
+            "type": "buttonRow",
+            "buttons": [
+              {
+                "type": "button",
+                "variant": "primary",
+                "text": "View state notes",
+                "onClick": {
+                    "type": "IFRAME",
+                    "width": 800,
+                    "height": 600,
+                    "uri": notes,
+                }
+              }
+            ]
+        },
       ];
 
   } catch (error) {
