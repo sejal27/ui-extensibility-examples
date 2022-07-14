@@ -23,7 +23,7 @@ exports.main = async (context = {}, sendResponse) => {
 
   try {
     const {
-        data: { error, message, notes, covid19Site },
+        data: { error, notes, covid19Site },
       } = await axios.get(
         `https://api.covidtracking.com/v1/states/${state}/info.json`
       );
@@ -65,7 +65,7 @@ exports.main = async (context = {}, sendResponse) => {
           },
         },
     ];
-    console.log(error, message, notes, covid19Site, country, state);
+    console.log(error, notes, covid19Site, country, state);
   }
   
   sendResponse({
