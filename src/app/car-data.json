@@ -5,7 +5,6 @@
       "title": "Car VIN Decoder Card",
       "fetch": {
         "targetFunction": "car-data",
-        "timeoutMs": "30000",
         "objectTypes": [
           {
             "name": "p_car",

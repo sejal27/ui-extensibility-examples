@@ -33,7 +33,18 @@ exports.main = async (context = {}, sendResponse) => {
               }
             }
           ]
-      },    
+      },
+      {
+        "type": "text",
+        "format": "markdown",
+        "text": "**All cars**"
+      },
+      {
+        type: 'crm::table',
+        objectTypeId: '0-1',
+        properties: ['email', 'hubspot_owner_id', 'firstname', 'lastname'],
+        pageSize: 3
+      },   
     ];
     sendResponse({
         sections
