@@ -49,6 +49,11 @@ exports.main = async (context = {}, sendResponse) => {
   } catch (error) {
     sections = [
         {
+            type: "tag",
+            text: `${state}`,
+            variant: "success",
+          },
+        {
           type: "alert",
           title:
             "Problems with fetching covid data",
