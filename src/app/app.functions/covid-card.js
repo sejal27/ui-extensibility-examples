@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 exports.main = async (context = {}, sendResponse) => {
-  const { state, country } = context;
+  const { state, country } = context.propertiesToSend;
 
   let sections = [];
   if (country !== "US" || !state) {
@@ -20,7 +20,7 @@ exports.main = async (context = {}, sendResponse) => {
     ];
   }
 
-
+//   const apiURL = "https://api.covidtracking.com/v1/states/" + state + 
   try {
     const {
         data: { error, notes, covid19Site },
@@ -52,7 +52,7 @@ exports.main = async (context = {}, sendResponse) => {
             type: "tag",
             text: `${state}`,
             variant: "error",
-          },
+        },
         {
           type: "alert",
           title:
