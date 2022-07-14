@@ -20,10 +20,10 @@ exports.main = async (context = {}, sendResponse) => {
     ];
   }
 
-  const apiURL = "https://api.covidtracking.com/v1/states/" + state + "/info.json";
+  const apiURL = "https://api.covidtracking.com/v1/states/" + state + "/current.json";
   try {
     const {
-        data: { error, notes, covid19Site },
+        data: { hospitalizedCurrently, death, deathIncrease, lastUpdateEt },
       } = await axios.get(apiURL);
 
       sections = [
@@ -33,31 +33,29 @@ exports.main = async (context = {}, sendResponse) => {
           variant: "success",
         },
         {
-          type: "text",
-          format: "markdown",
-          text: `**State Notes:** ${notes}`,
-        },
-        {
-          type: "text",
-          format: "markdown",
-          text: `**State's Covid-19 Site:** [${covid19Site}](${covid19Site})`,
-        },
-        {
-            "type": "buttonRow",
-            "buttons": [
+            "type": "statistics",
+            "items": [
               {
-                "type": "button",
-                "variant": "primary",
-                "text": "View state notes",
-                "onClick": {
-                    "type": "IFRAME",
-                    "width": 800,
-                    "height": 600,
-                    "uri": apiURL.notes,
+                "label": "Hospitalized Currently",
+                "number": hospitalizedCurrently,
+                "description": {
+                  "type": "text",
+                  "format": "markdown",
+                  "text": "# of people hospitalized as of " + lastUpdateEt
+                }
+              },
+              {
+                "label": "Deaths",
+                "number": death,
+                "description": {
+                  "type": "trend",
+                  "value": deathIncrease,
+                  "direction": "increase"
                 }
               }
+              
             ]
-        },
+          }
       ];
 
   } catch (error) {

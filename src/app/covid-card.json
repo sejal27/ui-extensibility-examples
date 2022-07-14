@@ -2,7 +2,7 @@
     "type": "crm-card",
     "version": "2",
     "data": {
-      "title": "Covid Information",
+      "title": "Information about Covid",
       "fetch": {
         "targetFunction": "covid-card",
         "objectTypes": [
