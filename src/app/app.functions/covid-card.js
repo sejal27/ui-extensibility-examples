@@ -4,7 +4,7 @@ exports.main = async (context = {}, sendResponse) => {
   const { state, country } = context;
 
   let sections = [];
-  if (country !== "US" || !state) {
+  if (country !== "us" || !state) {
     sections = [
       {
         type: "alert",
@@ -23,7 +23,7 @@ exports.main = async (context = {}, sendResponse) => {
   const {
     data: { error, message, notes, covid19Site },
   } = await axios.get(
-    `https://api.covidtracking.com/v1/states/${state.toLowerCase()}/info.json`
+    `https://api.covidtracking.com/v1/states/${state}/info.json`
   );
 
   console.log(error, message, notes, covid19Site, country, state);
