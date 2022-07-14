@@ -20,13 +20,11 @@ exports.main = async (context = {}, sendResponse) => {
     ];
   }
 
-//   const apiURL = "https://api.covidtracking.com/v1/states/" + state + 
+  const apiURL = "https://api.covidtracking.com/v1/states/" + state + "/info.json";
   try {
     const {
         data: { error, notes, covid19Site },
-      } = await axios.get(
-        `https://api.covidtracking.com/v1/states/${state}/info.json`
-      );
+      } = await axios.get(apiURL);
 
       sections = [
         {
