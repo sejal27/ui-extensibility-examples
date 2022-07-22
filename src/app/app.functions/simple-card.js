@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 exports.main = async (context = {}, sendResponse) => {
-    const {firstname} = context.propertiesToSend;
+    const {firstname, lastname} = context.propertiesToSend;
     const sections = [
         {
             "type": "alert",
