@@ -9,7 +9,8 @@
           {
             "name": "contacts",
             "propertiesToSend": [
-              "firstname"
+              "firstname",
+              "lastname"
             ],
             "actions": []
           }

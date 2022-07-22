@@ -9,7 +9,7 @@ exports.main = async (context = {}, sendResponse) => {
             "title": "Contact Highlights Card",
             "body": {
               "type": "text",
-              "text": firstname + " loves Tesla."
+              "text": firstname + " " + lastname + " loves Tesla."
             }
           } 
         
