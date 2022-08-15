@@ -24,10 +24,6 @@
         {
           "file": "./erp-list.json",
           "version":"2"
-        },
-        {
-          "file": "./erp-stats.json",
-          "version":"2"
         }
       ]
     }

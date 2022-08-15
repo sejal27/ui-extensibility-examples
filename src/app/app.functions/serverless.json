@@ -13,9 +13,6 @@
     },
     "erp-list":{
       "file": "erp-list.js"
-    },
-    "erp-stats":{
-      "file": "erp-stats.js"
     }
   }
 }
