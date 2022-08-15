@@ -10,6 +10,9 @@
     },
     "covid-card":{
       "file": "covid-card.js"
+    },
+    "erp-list":{
+      "file": "erp-list.js"
     }
   }
 }

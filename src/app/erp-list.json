@@ -1,0 +1,17 @@
+{
+	"type": "crm-card",
+	"version": "2",
+	"data": {
+		"title": "Billing Details",
+		"fetch": {
+			"targetFunction": "descriptionlist",
+			"objectTypes": [
+				{
+					"name": "contacts",
+					"propertiesToSend": [],
+					"actions": []
+				}
+			]
+		}
+	}
+}

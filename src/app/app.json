@@ -20,6 +20,10 @@
         {
           "file": "./covid-card.json",
           "version":"2"
+        },
+        {
+          "file": "./erp-list.json",
+          "version":"2"
         }
       ]
     }
