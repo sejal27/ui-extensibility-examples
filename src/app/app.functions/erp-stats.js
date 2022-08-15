@@ -11,8 +11,8 @@ exports.main = async (context = {}, sendResponse) => {
 					"description": {
 						"type": "trend",
 						"value": "23.36%",
-						"direction": "increase",
-					},
+						"direction": "increase"
+					}
 				},
 				{
 					"label": "Total Submissions",
@@ -20,11 +20,11 @@ exports.main = async (context = {}, sendResponse) => {
 					"description": {
 						"type": "trend",
 						"value": "9.25%",
-						"direction": "decrease",
-					},
-				},
-			],
-		},
+						"direction": "decrease"
+					}
+				}
+			]
+		}
 	];
 
 	sendResponse({
