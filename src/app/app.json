@@ -8,8 +8,6 @@
     "crm.lists.read",
     "crm.schemas.contacts.read",
     "crm.schemas.contacts.write",
-    "lists",
-    "automation",
     "crm.objects.cars.write",
     "crm.objects.cars.read"
   ],
