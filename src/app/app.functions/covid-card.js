@@ -18,6 +18,9 @@ exports.main = async (context = {}, sendResponse) => {
         },
       },
     ];
+    sendResponse({
+      sections,
+    });
   }
 
   const apiURL = "https://api.covidtracking.com/v1/states/" + state.toLowerCase() + "/current.json";
