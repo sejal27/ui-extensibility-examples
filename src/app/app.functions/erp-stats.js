@@ -1,6 +1,4 @@
-const axios = require("axios");
-
-exports.main = async (context = {}, sendResponse) => {
+exports.main = async (sendResponse) => {
 	const sections = [
 		{
 			"type": "statistics",
@@ -23,8 +21,8 @@ exports.main = async (context = {}, sendResponse) => {
 						"direction": "decrease"
 					}
 				}
-			]
-		}
+			],
+		},
 	];
 
 	sendResponse({
