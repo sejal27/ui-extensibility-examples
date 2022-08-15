@@ -1,0 +1,17 @@
+{
+	"type": "crm-card",
+	"version": "2",
+	"data": {
+		"title": "Product Usage",
+		"fetch": {
+			"targetFunction": "erp-stats",
+			"objectTypes": [
+				{
+					"name": "contacts",
+					"propertiesToSend": [],
+					"actions": []
+				}
+			]
+		}
+	}
+}
