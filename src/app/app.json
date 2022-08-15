@@ -7,24 +7,14 @@
     "crm.lists.write",
     "crm.lists.read",
     "crm.schemas.contacts.read",
-    "crm.schemas.contacts.write",
-    "crm.objects.cars.write",
-    "crm.objects.cars.read"
+    "crm.schemas.contacts.write"
   ],
   "public": false,
   "extensions": {
     "crm": {
       "cards": [
         {
-          "file": "./car-data.json",
-          "version":"2"
-        },
-        {
           "file": "./simple-card.json",
-          "version":"2"
-        },
-        {
-          "file": "./crm-table.json",
           "version":"2"
         },
         {
