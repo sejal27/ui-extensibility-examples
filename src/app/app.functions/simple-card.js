@@ -11,7 +11,17 @@ exports.main = async (context = {}, sendResponse) => {
               "type": "text",
               "text": firstname + " " + lastname + " loves Tesla."
             }
-          } 
+          },
+          {
+            "type": "buttonRow",
+            "buttons": [
+              {
+                "type": "button",
+                "variant": "primary",
+                "text": "Create Quote"
+              }
+            ]
+          }
         
     ];
 
