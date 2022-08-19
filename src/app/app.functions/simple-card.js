@@ -2,16 +2,6 @@ const axios = require("axios");
 const asana = require("asana");
 
 exports.main = async (context = {}, sendResponse) => {
-  const client = asana.Client.create().useAccessToken(process.env.ASANA_PAT);
-  if (context.event && context.event.type === "SUBMIT") {
-    client.tasks.createTask({
-      name: context.event.payload.formState.taskName,
-      notes: context.event.payload.formState.taskNotes,
-      projects: ["1202716730818738"],
-      pretty: true,
-    });
-  }
-
   const sections = [
     {
       type: "text",
@@ -56,7 +46,30 @@ exports.main = async (context = {}, sendResponse) => {
     },
   ];
 
-  sendResponse({
-    sections,
-  });
+  try {
+    const client = asana.Client.create().useAccessToken(process.env.ASANA_PAT);
+
+    if (context.event && context.event.type === "SUBMIT") {
+      await client.tasks.createTask({
+        name: context.event.payload.formState.taskName,
+        notes: context.event.payload.formState.taskNotes,
+        projects: ["1202831513432446"],
+        pretty: true,
+      });
+    }
+    sendResponse({
+      sections,
+      message: {
+        type: "SUCCESS",
+        body: "Task added to Asana!",
+      },
+    });
+  } catch (error) {
+    sendResponse({
+      message: {
+        type: "ERROR",
+        body: `Error: ${error.message}`,
+      },
+    });
+  }
 };
