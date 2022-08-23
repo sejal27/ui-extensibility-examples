@@ -4,8 +4,7 @@ const asana = require("asana");
 exports.main = async (context = {}, sendResponse) => {
   const sections = [
     {
-      type: "text",
-      format: "markdown",
+      type: "heading",
       text: "Add a new task",
     },
     {

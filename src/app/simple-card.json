@@ -2,7 +2,7 @@
   "type": "crm-card",
   "version": "2",
   "data": {
-    "title": "Create tasks in Asana project",
+    "title": "Asana integration demo",
     "fetch": {
       "targetFunction": "simple-card",
       "objectTypes": [
