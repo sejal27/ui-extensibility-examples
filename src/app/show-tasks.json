@@ -2,9 +2,9 @@
     "type": "crm-card",
     "version": "2",
     "data": {
-      "title": "Contact Highlights Card",
+      "title": "Show Asana Tasks",
       "fetch": {
-        "targetFunction": "simple-card",
+        "targetFunction": "show-tasks",
         "objectTypes": [
           {
             "name": "contacts",

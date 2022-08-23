@@ -2,11 +2,12 @@
   "runtime": "nodejs12.x",
   "version": "1.0",
   "appFunctions": {
-    "car-data": {
-      "file": "car-data.js"
-    },
     "simple-card": {
       "file": "simple-card.js",
+      "secrets": ["ASANA_PAT"]
+    },
+    "show-tasks": {
+      "file": "show-tasks.js",
       "secrets": ["ASANA_PAT"]
     }
   }
