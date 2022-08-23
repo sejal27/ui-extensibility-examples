@@ -6,16 +6,7 @@ exports.main = async (context = {}, sendResponse) => {
     {
       type: "text",
       format: "markdown",
-      text: "This contact loves Tesla!**",
-    },
-    {
-      type: "divider",
-      distance: "small",
-    },
-    {
-      type: "text",
-      format: "markdown",
-      text: "**All Contacts**",
+      text: "Add a new task",
     },
     {
       type: "form",
@@ -36,7 +27,7 @@ exports.main = async (context = {}, sendResponse) => {
         },
         {
           type: "button",
-          text: "Submit Form",
+          text: "Add Task",
           onClick: {
             type: "SUBMIT",
             serverlessFunction: "simple-card",
