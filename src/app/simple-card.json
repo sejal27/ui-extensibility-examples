@@ -1,8 +1,8 @@
 {
   "type": "crm-card",
-  "version": "2",
   "data": {
     "title": "Asana integration demo",
+    "location": "crm.record.sidebar",
     "fetch": {
       "targetFunction": "simple-card",
       "objectTypes": [
