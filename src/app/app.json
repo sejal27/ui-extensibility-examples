@@ -15,6 +15,9 @@
       "cards": [
         {
           "file": "./simple-card.json"
+        },
+        {
+          "file": "./show-tasks.json"
         }
       ]
     }

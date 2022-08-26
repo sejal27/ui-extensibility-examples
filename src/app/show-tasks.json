@@ -1,17 +1,17 @@
 {
-    "type": "crm-card",
-    "version": "2",
-    "data": {
-      "title": "Show Asana Tasks",
-      "fetch": {
-        "targetFunction": "show-tasks",
-        "objectTypes": [
-          {
-            "name": "contacts",
-            "propertiesToSend": [],
-            "actions": []
-          }
-        ]
-      }
+  "type": "crm-card",
+  "data": {
+    "title": "Show Asana Tasks",
+    "location": "crm.record.tab",
+    "fetch": {
+      "targetFunction": "show-tasks",
+      "objectTypes": [
+        {
+          "name": "contacts",
+          "propertiesToSend": [],
+          "actions": []
+        }
+      ]
     }
   }
+}
