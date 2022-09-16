@@ -3,6 +3,8 @@
 # and commit this file to your remote git repository to share the goodness with others.
 
 tasks:
-  - init: npm install
+  - init: npm install -g @hubspot/cli@next
+    command: hs init
+    
 
 
