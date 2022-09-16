@@ -16,6 +16,8 @@ exports.main = async (context = {}, sendResponse) => {
           inputType: "text",
           label: "Task Name",
           initialValue: "",
+          required: true,
+          requiredValidationMessage: "...",
         },
         {
           type: "input",
